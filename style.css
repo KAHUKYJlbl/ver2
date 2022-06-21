@@ -1,16 +1,21 @@
+header {
+  background: #381717 url("img/keyboard.jpg") no-repeat 50%;
+  height: 300px;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
 body {
   margin: 0
+  display: grid;
 }
 
 ul {
   vertical-align: top;
   margin: 0;
-}
-
-header {
-  background: #381717 url("img/keyboard.jpg") no-repeat 50%;
-  height: 300px;
-  display: grid;
 }
 
 .ru-en {
@@ -21,7 +26,6 @@ header {
 .contacts {
   width: 260px;
   height: 280px;
-  display: inline-block;
   list-style:none;
   margin-block-start: 0;
   margin-block-end: 0;
@@ -38,26 +42,23 @@ header {
   padding-top: 4px;
   text-align: center;
   background: rgba(25, 10, 10, 0.5);
-  border: 1px solid rgb(20, 20, 20);
+  border: 1px solid rgb(50, 20, 20);
   border-radius: 8px;
   box-shadow: 0 0 4px 2px rgba(250, 200, 200, 0.3);
 }
 
 .face-name {
-  position: fixed;
-  right: 33%;
   width: 300px;
   height: 280px;
-  margin: 0 auto;
-  display: inline-block;
+  margin: 0;
 }
 
 .face {
     margin: 30px 0 0;
     background: rgba(240, 180, 180, 0.5);
-    border: 1px solid rgb(120, 60, 60);
+    border: 1px solid rgb(50, 20, 20);
     border-radius: 8px;
-    box-shadow: 0 1px 4px 2px rgba(250, 200, 200, 0.3);
+    box-shadow: 0 0 4px 2px rgba(250, 200, 200, 0.3);
 }
 
 .name {

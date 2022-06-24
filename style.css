@@ -1,16 +1,15 @@
 header {
-  background: #381717 url("img/keyboard.jpg") no-repeat 50%;
-  height: 300px;
+  /*background: #381717 url("img/keyboard.jpg") no-repeat 50%;*/
+  /*height: 300px;*/
 }
 
 .header {
   display: grid;
-  grid-template-columns: 270px 4fr;
+  grid-template-areas:  270px 4fr;
 }
 
 body {
   margin: 0;
-  display: grid;
 }
 
 ul {

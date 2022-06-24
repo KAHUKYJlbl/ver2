@@ -3,11 +3,19 @@ body {
 }
 
 header {
-  padding: 10px;
   display: grid;
   grid-template-columns: 280px 1fr 150px;
-  grid-template-areas: "lang lang lang"
+  grid-template-areas: "contacts lang lang"
                        "contacts me none";
+  background: #201717 url("img/keyboard.jpg") no-repeat 50%;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  grid-template-areas: "educ CV"
+                       "educ experience";
+  background: #cbcbcb url("img/font.jpg") no-repeat 40%;
 }
 
 .lang {
@@ -21,6 +29,7 @@ header {
   padding: 0;
   list-style: none;
   grid-area: contacts;
+  background-color: rgba(180, 0, 0, 0.4);
 }
 
 .me {
@@ -28,4 +37,19 @@ header {
   justify-self: center;
   align-self: center;
   width: 190px;
+}
+
+.educ {
+  grid-area: educ;
+  background-color: rgba(180, 0, 0, 0.4);
+}
+
+.CV {
+  grid-area: CV;
+  min-width: 340px;
+}
+
+.experience {
+  grid-area: experience;
+  min-width: 340px;
 }
